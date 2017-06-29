@@ -1,0 +1,46 @@
+{
+  "code": 1,
+  "msg": "success",
+  "data": [
+    {
+      "id": 1,
+      "identify": "convenient",
+      "telephone": "13203174313",
+      "name": "東時便當",
+      "url": "assets/img/takeaway-01.jpg",
+      "description": "东时，美色与美味兼具的好便当"
+    },
+    {
+      "id": 2,
+      "identify": "ferry",
+      "telephone": "073185360037",
+      "name": "栖口渡鱼粉",
+      "url": "assets/img/takeaway-02.jpg",
+      "description": "方便快捷，卫生放心"
+    },
+    {
+      "id": 3,
+      "identify": "meat",
+      "telephone": "18670326776",
+      "name": "無肉不食",
+      "url": "assets/img/takeaway-03.jpg",
+      "description": "烤肉拌饭，脆皮鸡饭"
+    },
+    {
+      "id": 4,
+      "identify": "rice-flour",
+      "telephone": "073183295723",
+      "name": "长沙米粉",
+      "url": "assets/img/takeaway-04.jpg",
+      "description": "长沙米粉，家常菜馆"
+    },
+    {
+      "id": 5,
+      "identify": "hotpot",
+      "telephone": "18975109875",
+      "name": "钵钵煮义",
+      "url": "assets/img/takeaway-01.jpg",
+      "description": "冒菜、小吃、饮品"
+    }
+  ]
+}
