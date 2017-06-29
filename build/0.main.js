@@ -24,7 +24,7 @@ var RandomPageModule = (function () {
     return RandomPageModule;
 }());
 RandomPageModule = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* NgModule */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_2__random__["a" /* RandomPage */],
         ],
