@@ -1,0 +1,22 @@
+{
+  "code": 1,
+  "msg": "success",
+  "data": [
+    {
+      "name": "冒菜火锅",
+      "price": 18
+    },
+    {
+      "name": "凉皮、凉面",
+      "price": 8
+    },
+    {
+      "name": "蜜汁乌梅汁",
+      "price": 6
+    },
+    {
+      "name": "招牌奶茶",
+      "price": 8
+    }
+  ]
+}
