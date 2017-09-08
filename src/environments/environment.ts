@@ -2,6 +2,6 @@
  * Created by tangjy on 2017/6/28.
  */
 export const environment = {
-  production: false,
+  production: true,
   title: 'My Module in dev mode'
 }
