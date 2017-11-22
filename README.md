@@ -85,3 +85,8 @@ ionic2 deeplinker页面跳转只能够传递number、string类型，传递url一
     }
   ]
 ```
+
+### 编译android apk文件
+
+- 拷贝 `keystore/release-signing.properties`文件到 `platforms/android`目录
+- 执行命令 `ionic cordova build android --prod --release`
