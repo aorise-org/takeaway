@@ -1,13 +1,12 @@
-import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { Platform } from 'ionic-angular';
+import {Injectable} from "@angular/core";
+import {Http, Response} from "@angular/http";
+import {Platform} from "ionic-angular";
 
-import { Carte } from '../../models/carte';
-import { environment } from '../../environments/environment';
+import {Carte} from "../../models/carte";
 
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
+import {Observable} from "rxjs/Observable";
+import "rxjs/add/operator/map";
+import "rxjs/add/operator/catch";
 
 /*
   Generated class for the DetailsServiceProvider provider.
@@ -23,14 +22,15 @@ export class DetailsServiceProvider {
   }
 
   getCartes(identify: string): Observable<Carte[]> {
-    let url = `/assets/mock/${identify}-carte.json`;
+    // let url = `/assets/mock/${identify}-carte.json`;
+    //
+    // if (this.platform.is('cordova') && this.platform.is('android')) {
+    //   url = 'file:///android_asset/www' + url;
+    // } else if (environment.production) {
+    //   url = `/takeaway/assets/mock/${identify}-carte.json`;
+    // }
 
-    if (this.platform.is('cordova') && this.platform.is('android')) {
-      url = 'file:///android_asset/www' + url;
-    } else if (environment.production) {
-      url = `/takeaway/assets/mock/${identify}-carte.json`;
-    }
-
+    let url = `https://raw.githubusercontent.com/tangjianye/ionic-takeaway/gh-pages/assets/mock/${identify}-carte.json`;
     console.log(url);
     return this.http.get(url)
       .map(this.extractData)

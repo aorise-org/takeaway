@@ -1,13 +1,12 @@
-import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
-import { Platform } from 'ionic-angular';
+import {Injectable} from "@angular/core";
+import {Http, Response} from "@angular/http";
+import {Platform} from "ionic-angular";
 
-import {Takeaway} from '../../models/takeaway';
-import { environment } from '../../environments/environment';
+import {Takeaway} from "../../models/takeaway";
 
-import {Observable} from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
+import {Observable} from "rxjs/Observable";
+import "rxjs/add/operator/map";
+import "rxjs/add/operator/catch";
 
 
 /*
@@ -24,14 +23,15 @@ export class TakeawayServiceProvider {
   }
 
   getTakeaways(): Observable<Takeaway[]> {
-    let url = `/assets/mock/takeaway.json`;  // 本机模拟请求
+    // let url = `/assets/mock/takeaway.json`;  // 本机模拟请求
+    //
+    // if (this.platform.is('cordova') && this.platform.is('android')) {
+    //   url = 'file:///android_asset/www' + url;
+    // } else if (environment.production) {
+    //   url = `/takeaway/assets/mock/takeaway.json`;  // 跨域访问 ionic.config.json proxyUrl
+    // }
 
-    if (this.platform.is('cordova') && this.platform.is('android')) {
-      url = 'file:///android_asset/www' + url;
-    } else if (environment.production) {
-      url = `/takeaway/assets/mock/takeaway.json`;  // 跨域访问 ionic.config.json proxyUrl
-    }
-
+    let url = `https://raw.githubusercontent.com/tangjianye/ionic-takeaway/gh-pages/assets/mock/takeaway.json`;
     return this.http.get(url)
       .map(this.extractData)
       .catch(this.handleError);

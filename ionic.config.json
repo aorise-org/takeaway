@@ -2,12 +2,6 @@
   "name": "ionic-practice",
   "app_id": "",
   "type": "ionic-angular",
-  "proxies": [
-    {
-      "path": "/takeaway",
-      "proxyUrl": "https://aorise-org.github.io/takeaway"
-    }
-  ],
   "integrations": {
     "cordova": {}
   }
